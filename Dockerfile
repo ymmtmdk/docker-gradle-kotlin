@@ -3,8 +3,6 @@ FROM gradle
 ENV KOTLIN_VERSION=1.1.2-2 \
             KOTLIN_HOME=/usr/local/kotlin
 
-# https://github.com/JetBrains/kotlin/releases/download/v1.0.4/kotlin-compiler-1.0.4.zip
-
 USER root
 RUN         cd  /tmp && \
             wget -k "https://github.com/JetBrains/kotlin/releases/download/v${KOTLIN_VERSION}/kotlin-compiler-${KOTLIN_VERSION}.zip"  && \
